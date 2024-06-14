@@ -21,7 +21,7 @@ class VideoAnalyzerApp:
         self.canvas = None
 
     def upload_video(self):
-        video_path = filedialog.askopenfilename(filetypes=[("AVI files", "*.avi"), ("All files", "*.*")])
+        video_path = filedialog.askopenfilename(filetypes=[("Video files", "*.avi;*.mp4"), ("All files", "*.*")])
         if video_path:
             self.process_video(video_path)
 
